@@ -1,5 +1,17 @@
 setEmailTooltip();
-navHome();
+router();
+
+function router() {
+  const url = window.location.href;
+  const route = url.indexOf('#') > -1 ? url.substring(url.indexOf('#'), url.length) : null;
+  if (route === '#') {
+    navHome();
+  } else if (route === '#Experience') {
+    navExperience();
+  } else if (route === '#About') {
+    navAbout();
+  }
+}
 
 function navHome() {
   document.getElementById('main-content').innerHTML = `
