@@ -17,7 +17,7 @@ function navExperience() {
           <div class="content">
             <b>September 2016 - May 2018</b><br>
             Software Engineer, Alpha Connect<br><br>
-            Build internal applications for various departments.<br><br>
+            Build internal applications for various departments.
             <ul>
               <li>Languages: C#, VB.NET, PHP, HTML, CSS, JavaScript</li>
               <li>Frameworks: ASP.NET, .NET Framework, Laravel, WinForms</li>
@@ -31,7 +31,7 @@ function navExperience() {
         <div class="item right">
           <div class="content">
             <b>May 2018</b><br>
-            Graduated ASU, B.S. in Computer Science
+            Graduated ASU, B.S. Computer Science
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ function navExperience() {
           <div class="content">
             <b>May 2018 - October 2018</b><br>
             Software Developer, Global Payments<br><br>
-            Modernize primary web and desktop client.<br><br>
+            Modernize web and desktop client.
             <ul>
               <li>Languages: C#, HTML, CSS, JavaScript</li>
               <li>Libraries: jQuery</li>
@@ -55,7 +55,7 @@ function navExperience() {
         <div class="item left">
           <div class="content">
             <b>October 2018 - Present</b><br>
-            UI Developer IV, American Airlines<br><br>
+            UI Developer IV, American Airlines
             Build full stack application for aircraft maintenance to assist in materials migration.<br><br>
             <ul>
               <li>Languages: C#, TypeScript, JavaScript, HTML, Less</li>

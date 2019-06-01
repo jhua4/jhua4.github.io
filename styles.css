@@ -59,6 +59,7 @@ i.fa {
 
 ul {
   margin-bottom: 0;
+  padding-left: 10px;
 }
 
 /* The actual timeline (the vertical ruler) */
