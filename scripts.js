@@ -4,12 +4,13 @@ router();
 function router() {
   const url = window.location.href;
   const route = url.indexOf('#') > -1 ? url.substring(url.indexOf('#'), url.length) : null;
-  if (route === '#') {
-    navHome();
-  } else if (route === '#Experience') {
+
+  if (route === '#Experience') {
     navExperience();
   } else if (route === '#About') {
     navAbout();
+  } else {
+    navHome();
   }
 }
 
