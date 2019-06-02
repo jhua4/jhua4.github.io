@@ -68,8 +68,8 @@ function navExperience() {
         <div class="item left">
           <div class="content">
             <b>October 2018 - Present</b><br>
-            UI Developer IV, American Airlines
-            Build full stack application for aircraft maintenance to assist in materials migration.<br><br>
+            UI Developer IV, American Airlines<br><br>
+            Build full stack application for aircraft maintenance to assist in materials migration.
             <ul>
               <li>Languages: C#, TypeScript, JavaScript, HTML, Less</li>
               <li>Libraries: Kendo UI for Angular, nrwl/nx</li>
