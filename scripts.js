@@ -17,7 +17,7 @@ function router() {
 function navHome() {
   document.getElementById('main-content').innerHTML = `
     <div class="banner">
-      <h5>Nothing to see here! Yet...</h5>
+      <h5>More stuff coming soon!</h5>
     </div>
   `;
 }
