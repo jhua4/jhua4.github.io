@@ -7,8 +7,6 @@ function router() {
 
   if (route === '#Experience') {
     navExperience();
-  } else if (route === '#About') {
-    navAbout();
   } else {
     navHome();
   }
@@ -17,7 +15,8 @@ function router() {
 function navHome() {
   document.getElementById('main-content').innerHTML = `
     <div class="banner">
-      <h5>More stuff coming soon!</h5>
+      <h2 class="banner">Full Stack Web Developer</h2>
+      <p>Hi, I'm Joshua Hua. If you're looking for examples of my work, you can check out my latest project at <a href="https://github.com/jhua4/needyd" target="_blank">https://github.com/jhua4/needyd</a></p>
     </div>
   `;
 }
@@ -28,19 +27,19 @@ function navExperience() {
       <div class="timeline color1">
         <div class="item left">
           <div class="content">
-            <b>September 2016 - May 2018</b><br>
+            <b class="color1">September 2016 - May 2018</b><br>
             Software Engineer, Alpha Connect<br><br>
-            Build internal applications for various departments.
+            Added new features to .NET desktop application, and built new applications.<br>
+            Installed and integrated SQL server for storage.<br>
+            Mentored a junior developer.
             <ul>
-              <li>Languages: C#, VB.NET, PHP, HTML, CSS, JavaScript</li>
-              <li>Frameworks: ASP.NET, .NET Framework, Laravel, WinForms</li>
-              <li>Databases: SQL Server, MySQL</li>
-              <li>OS / Cloud: Windows, Ubuntu, AWS, Azure</li>
+              <li>Languages: C#, VB.NET</li>
+              <li>Frameworks: .NET Framework, WinForms</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="timeline color2">
+      <div class="timeline color1">
         <div class="item right">
           <div class="content">
             <b>May 2018</b><br>
@@ -48,34 +47,32 @@ function navExperience() {
           </div>
         </div>
       </div>
-      <div class="timeline color3">
+      <div class="timeline color1">
         <div class="item right">
           <div class="content">
             <b>May 2018 - October 2018</b><br>
             Software Developer, Global Payments<br><br>
-            Modernize web and desktop client.
+            Added new features and debugged issues in ASP.NET web application.
             <ul>
               <li>Languages: C#, HTML, CSS, JavaScript</li>
               <li>Libraries: jQuery</li>
               <li>Frameworks: ASP.NET</li>
-              <li>Databases: SQL Server</li>
-              <li>OS / Cloud: Windows</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="timeline color4">
+      <div class="timeline color1">
         <div class="item left">
           <div class="content">
             <b>October 2018 - Present</b><br>
-            UI Developer IV, American Airlines<br><br>
-            Build full stack application for aircraft maintenance to assist in materials migration.
+            Senior Software Developer, American Airlines<br><br>
+            Built two full stack applications from the ground up including UI, API and data processing job.<br>
+            Integrated with other backend services and SQL/Oracle databases.<br>
+            Setup CI/CD pipeline.	
             <ul>
-              <li>Languages: C#, TypeScript, JavaScript, HTML, Less</li>
+              <li>Languages: C#, TypeScript, JavaScript, HTML, Less, GraphQL</li>
               <li>Libraries: Kendo UI for Angular, nrwl/nx</li>
-              <li>Frameworks: .NET Core, Web API, Angular 6, EF Core, xUnit, Jasmine, Protractor</li>
-              <li>Databases: SQL Server, Oracle</li>
-              <li>OS / Cloud: Windows, RHEL, PCF, Azure</li>
+              <li>Frameworks: .NET Core, Angular 7, EF Core, Node.js, xUnit, Jasmine, Protractor</li>
             </ul>
           </div>
         </div>
