@@ -18,6 +18,7 @@ function navHome() {
       <h2 class="banner">Full Stack Web Developer</h2>
       <p>Hi, I'm Joshua Hua. If you're looking for examples of my work, you can check out my latest project at <a href="https://github.com/jhua4/needyd" target="_blank">https://github.com/jhua4/needyd</a></p>
     </div>
+    <img src="server.png" alt="Code" class="image-center">
   `;
 }
 

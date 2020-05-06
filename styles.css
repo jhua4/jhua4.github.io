@@ -166,6 +166,12 @@ h2.banner {
   color: var(--color1);
   font-weight: bold;
 }
+.image-center {
+  height: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
