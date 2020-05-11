@@ -1,4 +1,3 @@
-setEmailTooltip();
 router();
 
 function router() {
@@ -13,9 +12,10 @@ function router() {
 }
 
 function navHome() {
+  document.getElementById('title').innerHTML = 'Home';
   document.getElementById('main-content').innerHTML = `
     <div class="banner">
-      <h2 class="banner">Full Stack Web Developer</h2>
+      <h2>Full Stack Web Developer / Generalist</h2>
       <p>Hi, I'm Joshua Hua. If you're looking for examples of my work, you can check out my latest project at <a href="https://github.com/jhua4/needyd" target="_blank">https://github.com/jhua4/needyd</a></p>
     </div>
     <img src="server.png" alt="Code" class="image-center">
@@ -23,6 +23,7 @@ function navHome() {
 }
 
 function navExperience() {
+  document.getElementById('title').innerHTML = 'Experience';
   document.getElementById('main-content').innerHTML = `
     <div class="timeline-content">
       <div class="timeline color1">
@@ -67,9 +68,12 @@ function navExperience() {
           <div class="content">
             <b>October 2018 - Present</b><br>
             Senior Software Developer, American Airlines<br><br>
-            Built two full stack applications from the ground up including UI, API and data processing job.<br>
-            Integrated with other backend services and SQL/Oracle databases.<br>
-            Setup CI/CD pipeline.	
+            Built two full stack applications used by frontline workers to order parts for aircraft maintenance.<br>
+	          Developed .NET Core WebAPI and Node.js backends, and Angular frontends.<br>
+	          Integrated with other backend services and SQL/Oracle databases.<br>
+	          Setup CI/CD pipeline, monitor application health using Dynatrace.<br>
+	          Work with other teams to facilitate development/testing and debug issues with data and infrastructure.
+
             <ul>
               <li>Languages: C#, TypeScript, JavaScript, HTML, Less, GraphQL</li>
               <li>Libraries: Kendo UI for Angular, nrwl/nx</li>
@@ -80,37 +84,4 @@ function navExperience() {
       </div>
     </div>
   `;
-}
-
-function navAbout() {
-  document.getElementById('main-content').innerHTML = `
-    <div class="banner">
-      <p>Currently employed full time, looking for additional part time work.</p>
-    </div>
-  `;
-}
-
-/** When user clicks on email, copy email address and change tooltip text */
-function onEmailClicked() {
-  const text = document.getElementById('email').innerText;
-  $('#email').tooltip('dispose').tooltip({ title: 'Copied!' }).tooltip('show');
-  if (!navigator.clipboard) {
-    fallbackCopyTextToClipboard(text);
-    return;
-  }
-  navigator.clipboard.writeText(text);
-}
-
-function fallbackCopyTextToClipboard(text) {
-  var textArea = document.createElement("textarea");
-  textArea.value = text;
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textArea);
-}
-
-function setEmailTooltip() {
-  $('#email').tooltip('dispose').tooltip({ title: 'Best contact method' });
 }
