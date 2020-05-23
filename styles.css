@@ -52,10 +52,6 @@ i.fa {
   margin-bottom: 50px;
 }
 
-.banner {
-  padding: 16px;
-}
-
 ul {
   margin-bottom: 0;
   padding-left: 10px;
@@ -163,9 +159,15 @@ ul {
 
 .banner {
   margin-top: 32px;
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
 }
 .banner h2 {
   color: var(--color1);
+}
+.banner p {
+  line-height: 2;
 }
 .image-center {
   height: 125px;
