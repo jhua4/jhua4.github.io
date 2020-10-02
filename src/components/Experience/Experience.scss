@@ -1,0 +1,120 @@
+$color1: #7356e2;
+
+.timeline-content {
+  margin-bottom: 50px;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  top: 24px;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* Item */
+.item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.item::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -8px;
+  top: 24px;
+  border-radius: 50%;
+  z-index: 1;
+  animation: fadeIn 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+/* Place the item to the left */
+.left {
+  left: 0;
+  transform: translateX(-200%);
+}
+
+/* Place the item to the right */
+.right {
+  left: 50%;
+  transform: translateX(200%);
+}
+
+/* Add arrows to the left item (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid $color1;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent $color1;
+}
+
+/* Add arrows to the right item (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid $color1;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent $color1 transparent transparent;
+}
+
+/* Fix the circle for items on the right side */
+.right::after {
+  left: -7px;
+}
+
+/* The actual content */
+.content {
+  padding: 15px;
+  background-color: $color1;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+}
+
+.color1::after {
+  background-color: $color1;
+}
+
+@keyframes fadeIn {
+  0% {
+    content: "";
+    background-color: transparent;
+  }
+  100% {
+    content: "";
+    background-color: $color1;
+  }
+}
