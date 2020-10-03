@@ -1,6 +1,5 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Josh Hua",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +7,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "apple-touch-icon1.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "180x180"
     }
   ],
   "start_url": ".",
