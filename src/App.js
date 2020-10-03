@@ -16,13 +16,25 @@ function App() {
     <HashRouter>
       <header className={classes.header}>
         <div>
-          <a target="_blank" href="https://github.com/jhua4">
+          <a
+            href="https://github.com/jhua4"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a target="_blank" href="https://twitter.com/_jhua4">
+          <a
+            href="https://twitter.com/_jhua4"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a target="_blank" href="https://www.linkedin.com/in/jhua4">
+          <a
+            href="https://www.linkedin.com/in/jhua4"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>

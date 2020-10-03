@@ -3,10 +3,6 @@ import "./Experience.scss";
 import { gsap } from "gsap";
 
 class Experience extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
     tl.to([".right", ".left"], { x: "0%", duration: 1.25 });
