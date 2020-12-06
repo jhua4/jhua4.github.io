@@ -1,13 +1,22 @@
-import React from "react";
-import classes from "./Projects.module.scss";
+import React, { Component } from "react";
+import "./Projects.scss";
+import { gsap } from "gsap";
 
-const Projects = (props) => {
-  return (
-    <div className={classes.Projects}>
-      <h1>Projects</h1>
-      <p>Coming soon...</p>
-    </div>
-  );
+class Projects extends Component {
+  componentDidMount() {
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    tl.to(".projects__title-border", { width: "215px", duration: .5 });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1 className="projects__title">Projects</h1>
+        <div className="projects__title-border"></div>
+        <p>Coming soon...</p>
+      </div>
+    );
+  }
 };
 
 export default Projects;
