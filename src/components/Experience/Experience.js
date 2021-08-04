@@ -13,7 +13,7 @@ class Experience extends Component {
   render() {
     return (
       <div className="experience__timeline-content">
-        <h1 className="experience__title">Experience</h1>
+        <h1 className="experience__title">experience</h1>
         <div className="experience__title-border"></div>
         <div className="experience__timeline experience__color1">
           <div className="experience__item experience__right">

@@ -11,7 +11,7 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <h1 className="projects__title">Projects</h1>
+        <h1 className="projects__title">projects</h1>
         <div className="projects__title-border"></div>
         <p>Coming soon...</p>
       </div>
